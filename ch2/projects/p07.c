@@ -10,31 +10,31 @@
 #include <stdio.h>
 
 int main(void) {
-    // declare variables
-    int amount, twenties, tens, fives, ones;
+	// declare variables
+	int amount, twenties, tens, fives, ones;
 
-    // get user input
-    printf("\nEnter dollar amount (enter integer values only): $");
-    scanf("%d", &amount);
+	// get user input
+	printf("\nEnter dollar amount (enter integer values only): $");
+	scanf("%d", &amount);
 
-    // calculate bill amounts
-    twenties = amount / 20;
-    amount -= twenties * 20;
+	// calculate bill amounts
+	twenties = amount / 20;
+	amount -= twenties * 20;
 
-    tens = amount / 10;
-    amount -= tens * 10;
+	tens = amount / 10;
+	amount -= tens * 10;
 
-    fives = amount / 5;
-    amount -= fives * 5;
+	fives = amount / 5;
+	amount -= fives * 5;
 
-    ones = amount / 1;
-    amount -= ones * 1;
+	ones = amount / 1;
+	amount -= ones * 1;
 
-    // display the results
-    printf(
-        "\nDollar amount: %d\n\nSmallest number of bills:\n$20 bills: %d\n$10 "
-        "bills: %d\n$5 bills: %d\n$1 bills: %d\n\n",
-        amount, twenties, tens, fives, ones);
+	// display the results
+	printf(
+		"\nDollar amount: %d\n\nSmallest number of bills:\n$20 bills: %d\n$10 "
+		"bills: %d\n$5 bills: %d\n$1 bills: %d\n\n",
+		amount, twenties, tens, fives, ones);
 
-    return 0;
+	return 0;
 }

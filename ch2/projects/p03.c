@@ -3,19 +3,19 @@
 #include <stdio.h>
 
 int main(void) {
-    // declare variables
-    float radius, volume;
+	// declare variables
+	float radius, volume;
 
-    // get user input
-    printf("\nEnter sphere radius: ");
-    scanf("%f", &radius);
+	// get user input
+	printf("\nEnter sphere radius: ");
+	scanf("%f", &radius);
 
-    // calculate volume
-    volume = 4.0f / 3.0f * 3.141 * radius * radius * radius;
+	// calculate volume
+	volume = 4.0f / 3.0f * 3.141 * radius * radius * radius;
 
-    // display volume
-    printf("\nVolume of sphere with radius %.0f meters: %.2f cubic meters\n\n",
-           radius, volume);
+	// display volume
+	printf("\nVolume of sphere with radius %.0f meters: %.2f cubic meters\n\n",
+		   radius, volume);
 
-    return 0;
+	return 0;
 }

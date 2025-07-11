@@ -5,12 +5,12 @@
 #include <stdio.h>
 
 int main(void) {
-    double radius = 10;
-    double volume = 3.14 * 4.0f / 3.0f * radius * radius * radius;
+	double radius = 10;
+	double volume = 3.14 * 4.0f / 3.0f * radius * radius * radius;
 
-    printf("Volume of sphere with radius %.0f meters: %.2f cubic meters\n",
-           radius, volume);
+	printf("Volume of sphere with radius %.0f meters: %.2f cubic meters\n",
+		   radius, volume);
 
-    return 0;
+	return 0;
 }
 // I was not able to discern a difference between using 4/3 and 4.0f/3.0f.

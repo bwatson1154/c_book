@@ -6,19 +6,19 @@ instead calculating (volume + 165) / 166 within the last printf.
 #include <stdio.h>
 
 int main(void) {
-    int height, length, width, volume, weight;
+	int height, length, width, volume, weight;
 
-    height = 8;
-    length = 12;
-    width = 10;
-    volume = height * length * width;
-    weight = (volume + 165) / 166;
+	height = 8;
+	length = 12;
+	width = 10;
+	volume = height * length * width;
+	weight = (volume + 165) / 166;
 
-    printf("Dimensions: %dx%dx%d\n", length, width, height);
-    printf("Volume (cubic inches): %d\n", volume);
-    printf("Dimensional weight (pounds): %d\n", weight);
+	printf("Dimensions: %dx%dx%d\n", length, width, height);
+	printf("Volume (cubic inches): %d\n", volume);
+	printf("Dimensional weight (pounds): %d\n", weight);
 
-    return 0;
+	return 0;
 }
 
 The output of the program is:
@@ -29,11 +29,11 @@ Dimensional weight (pounds): 6
 #include <stdio.h>
 
 int main(void) {
-    int height = 8, length = 12, width = 10, volume = height * length * width;
+	int height = 8, length = 12, width = 10, volume = height * length * width;
 
-    printf("Dimensions: %dx%dx%d\n", length, width, height);
-    printf("Volume (cubic inches): %d\n", volume);
-    printf("Dimensional weight (pounds): %d\n", (volume + 165) / 166);
+	printf("Dimensions: %dx%dx%d\n", length, width, height);
+	printf("Volume (cubic inches): %d\n", volume);
+	printf("Dimensional weight (pounds): %d\n", (volume + 165) / 166);
 
-    return 0;
+	return 0;
 }

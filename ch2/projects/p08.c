@@ -15,34 +15,34 @@
 #include <stdio.h>
 
 int main(void) {
-    // declare variables
-    float balance, interest, payment, balanceOneMonth, balanceTwoMonth,
-        balanceThreeMonth;
+	// declare variables
+	float balance, interest, payment, balanceOneMonth, balanceTwoMonth,
+		balanceThreeMonth;
 
-    // get user input
-    printf("\nEnter amount of loan: $");
-    scanf("%f", &balance);
+	// get user input
+	printf("\nEnter amount of loan: $");
+	scanf("%f", &balance);
 
-    printf("\nEnter interest rate (e.g. 5.0, 6.5): ");
-    scanf("%f", &interest);
+	printf("\nEnter interest rate (e.g. 5.0, 6.5): ");
+	scanf("%f", &interest);
 
-    printf("\nEnter monthly payment: $");
-    scanf("%f", &payment);
+	printf("\nEnter monthly payment: $");
+	scanf("%f", &payment);
 
-    // calculate balances
-    balanceOneMonth = balance - payment + (balance * (interest / 100) / 12);
+	// calculate balances
+	balanceOneMonth = balance - payment + (balance * (interest / 100) / 12);
 
-    balanceTwoMonth =
-        balanceOneMonth - payment + (balanceOneMonth * (interest / 100) / 12);
+	balanceTwoMonth =
+		balanceOneMonth - payment + (balanceOneMonth * (interest / 100) / 12);
 
-    balanceThreeMonth =
-        balanceTwoMonth - payment + (balanceTwoMonth * (interest / 100) / 12);
+	balanceThreeMonth =
+		balanceTwoMonth - payment + (balanceTwoMonth * (interest / 100) / 12);
 
-    // display balances
-    printf("\nOriginal balance: $%.2f", balance);
-    printf("\nBalance after one month: $%.2f", balanceOneMonth);
-    printf("\nBalance after two months: $%.2f", balanceTwoMonth);
-    printf("\nBalance after three months: $%.2f\n\n", balanceThreeMonth);
+	// display balances
+	printf("\nOriginal balance: $%.2f", balance);
+	printf("\nBalance after one month: $%.2f", balanceOneMonth);
+	printf("\nBalance after two months: $%.2f", balanceTwoMonth);
+	printf("\nBalance after three months: $%.2f\n\n", balanceThreeMonth);
 
-    return 0;
+	return 0;
 }

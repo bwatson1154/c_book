@@ -6,18 +6,18 @@
 #include <stdio.h>
 
 int main(void) {
-    // declare variables
-    float x, value;
+	// declare variables
+	float x, value;
 
-    // get user input
-    printf("\nEnter a value for x: ");
-    scanf("%f", &x);
+	// get user input
+	printf("\nEnter a value for x: ");
+	scanf("%f", &x);
 
-    // calculate value of polynomial
-    value = ((((3 * x + 2) * x - 5) * x - 1) * x + 7) * x - 6;
+	// calculate value of polynomial
+	value = ((((3 * x + 2) * x - 5) * x - 1) * x + 7) * x - 6;
 
-    // display x value and polynomial value
-    printf("\nx value: %.2f\npolynomial value: %.2f\n\n", x, value);
+	// display x value and polynomial value
+	printf("\nx value: %.2f\npolynomial value: %.2f\n\n", x, value);
 
-    return 0;
+	return 0;
 }
