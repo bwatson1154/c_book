@@ -5,9 +5,11 @@
 #include <stdio.h>
 
 int main(void) {
+    // Declare radius variable, define volume in terms of radius
 	double radius = 10;
 	double volume = 3.14 * 4.0f / 3.0f * radius * radius * radius;
 
+    // Print calculated volume
 	printf("Volume of sphere with radius %.0f meters: %.2f cubic meters\n",
 		   radius, volume);
 

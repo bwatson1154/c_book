@@ -3,6 +3,7 @@
 #include <stdio.h>
 
 int main(void) {
+    // Print ascii art
 	printf("       *\n");
 	printf("      * \n");
 	printf("     *  \n");

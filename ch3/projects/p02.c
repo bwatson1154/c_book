@@ -16,20 +16,22 @@
 #include <stdio.h>
 
 int main(void) {
+    // Declare item number, price, and purchase date variables
 	int item, month, day, year;
 	float price;
 
-	printf("\nEnter item number: ");
+    // Get user input for variables
+	printf("Enter item number: ");
 	scanf("%d", &item);
-	printf("\nEnter unit price: ");
+	printf("Enter unit price: ");
 	scanf("%f", &price);
-	printf("\nEnter purchase date (mm/dd/yyyy): ");
+	printf("Enter purchase date (mm/dd/yyyy): ");
 	scanf("%d / %d / %d", &month, &day, &year);
 
-	printf("\n  Item        Unit        Purchase");
-	printf("\n              Price       Date");
-	printf("\n  %-4d        $   %4.2f   %-.2d/%-.2d/%-.4d\n", item, price,
-		   month, day, year);
+    // Print formatted variables
+	printf("\nItem\t\tUnit\t\tPurchase\t");
+	printf("\n\t\tPrice   \tDate\t\t");
+    printf("\n%-12d\t$%7.2f\t%-.2d/%-.2d/%-.4d\t\n", item, price, month, day, year);
 
 	return 0;
 }
